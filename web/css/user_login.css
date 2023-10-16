@@ -1,0 +1,67 @@
+/* 
+    Document   : user_login
+    Created on : 25 Jan, 2023, 10:32:36 AM
+    Author     : PRACHI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+   background-image: url(../images//watch5.jpg);
+   background-size: cover;
+}
+
+
+.whitediv
+{
+    height: 550px;
+    width: 80%;
+   
+    margin-left: 90%;
+    margin-top: 2%;
+   
+    height: 500px;
+    width: 1100px;
+    background-color: pink;
+    }
+.h
+{
+    font-size: 15px;
+    margin-left: 200px;
+    margin-top: 0.2px;
+    color: blue;
+    
+}
+.box
+{
+    height: 450px;
+    width: 400px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 800px;
+    opacity: 50%;
+}
+.textbox
+{
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.button
+{
+    height: 40px;
+    width: 180px;
+    margin-top: 40px;
+    margin-left: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}

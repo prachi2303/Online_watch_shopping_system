@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="admin_assistant" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="253c5f05-5242-4dfb-b4af-98a88615b7f3">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     admin_assistant.`id` AS admin_assistant_id,
+     admin_assistant.`watch_name` AS admin_assistant_watch_name,
+     admin_assistant.`color` AS admin_assistant_color,
+     admin_assistant.`features` AS admin_assistant_features,
+     admin_assistant.`launch_date` AS admin_assistant_launch_date,
+     admin_assistant.`select_image` AS admin_assistant_select_image,
+     admin_assistant.`price` AS admin_assistant_price,
+     admin_assistant.`date` AS admin_assistant_date
+FROM
+     `admin_assistant` admin_assistant]]>
+	</queryString>
+	<field name="admin_assistant_id" class="java.lang.Integer"/>
+	<field name="admin_assistant_watch_name" class="java.lang.String"/>
+	<field name="admin_assistant_color" class="java.lang.String"/>
+	<field name="admin_assistant_features" class="java.lang.String"/>
+	<field name="admin_assistant_launch_date" class="java.lang.String"/>
+	<field name="admin_assistant_price" class="java.lang.Long"/>
+	<group name="admin_assistant_id">
+		<groupExpression><![CDATA[$F{admin_assistant_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="340" y="21" width="192" height="58" forecolor="#990033" uuid="2215a651-3e47-40c0-a1de-47ff48573b36"/>
+				<textElement textAlignment="Center">
+					<font size="30" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Add Watches]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="16" width="802" height="1" uuid="68f167b4-5536-4154-81c4-728543297faa"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="133" height="20" uuid="671e0935-a828-4fd1-888b-7e0e0b1f5533"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="0" width="133" height="20" uuid="bc35045b-d8fd-4060-8d1a-901623ee18db"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Watch Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="0" width="133" height="20" uuid="c2e22a76-6037-4d10-8755-fe0068f2737f"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Color]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="399" y="0" width="133" height="20" uuid="5a745d51-4197-4f09-b897-401fdb6439a4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Launched Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="532" y="0" width="133" height="20" uuid="18fea82f-4ab5-4f6b-94af-fa413d140864"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Features]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="665" y="0" width="133" height="20" uuid="15bfc616-bbfb-4e6b-9b39-f18e51f05b47"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="38" width="802" height="1" uuid="69ad9be7-27c0-4461-8a1a-d0a00717996a"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="133" height="20" uuid="4e7e28cb-9763-45af-bf6a-789f0254e0ea"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{admin_assistant_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="0" width="133" height="20" uuid="f314adeb-9694-44d8-ac29-8dfa5d6d0dc2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{admin_assistant_watch_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="266" y="0" width="133" height="20" uuid="bd04f84a-3323-4e8f-865a-9f32dc6a18bf"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{admin_assistant_color}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="0" width="133" height="20" uuid="337460a2-9eed-40db-b463-48fb623f6202"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{admin_assistant_features}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="532" y="0" width="133" height="20" uuid="a9f18705-dfe6-4d14-b6c8-10a438cff643"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{admin_assistant_launch_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="665" y="0" width="133" height="20" uuid="14a4b867-4126-431d-baaa-4ce0478503c4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{admin_assistant_price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

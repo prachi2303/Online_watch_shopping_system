@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="my_orders" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e54ed2d2-c1ba-4d78-8cae-95d995882d85">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     my_orders.`id` AS my_orders_id,
+     my_orders.`user_id` AS my_orders_user_id,
+     my_orders.`watch_id` AS my_orders_watch_id,
+     my_orders.`watch_name` AS my_orders_watch_name,
+     my_orders.`features` AS my_orders_features,
+     my_orders.`select_image` AS my_orders_select_image,
+     my_orders.`price` AS my_orders_price,
+     my_orders.`color` AS my_orders_color,
+     my_orders.`date` AS my_orders_date,
+     my_orders.`quantity` AS my_orders_quantity,
+     my_orders.`total` AS my_orders_total,
+     my_orders.`delivery_date` AS my_orders_delivery_date,
+     my_orders.`order_status` AS my_orders_order_status
+FROM
+     `my_orders` my_orders]]>
+	</queryString>
+	<field name="my_orders_id" class="java.lang.Integer"/>
+	<field name="my_orders_watch_name" class="java.lang.String"/>
+	<field name="my_orders_features" class="java.lang.String"/>
+	<field name="my_orders_price" class="java.lang.Long"/>
+	<field name="my_orders_color" class="java.lang.String"/>
+	<field name="my_orders_date" class="java.lang.String"/>
+	<field name="my_orders_quantity" class="java.lang.String"/>
+	<field name="my_orders_total" class="java.lang.String"/>
+	<field name="my_orders_delivery_date" class="java.lang.String"/>
+	<group name="my_orders_id">
+		<groupExpression><![CDATA[$F{my_orders_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="356" y="35" width="172" height="44" forecolor="#990099" uuid="5c0fffc9-aebb-4424-abe4-e76598d5c1c8"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[My Orders]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="16" width="802" height="1" uuid="048ff60d-115c-4160-829d-ebbe93f465d0"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="89" height="20" uuid="b26670d2-f0ad-4a02-b4ef-57884b14d644"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="89" y="0" width="89" height="20" uuid="e33e9716-b61c-4648-8038-668b1fa09cb4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Watch Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="178" y="0" width="89" height="20" uuid="73150422-5849-4f86-88ee-27a95c23e92c"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Features]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="267" y="0" width="89" height="20" uuid="37d51a2e-b253-4bcb-b950-b01f1d7d23ea"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="0" width="89" height="20" uuid="b7ceb8d7-09b6-4e0e-b375-4c4e4b6c298e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Color]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="0" width="89" height="20" uuid="0042b948-248c-45eb-bf61-ea69cea3b5d9"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="534" y="0" width="89" height="20" uuid="aca77fc1-fdc7-4530-ad63-b76fe86b17a7"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="623" y="0" width="89" height="20" uuid="c8adef70-4f32-4118-9519-73a0db2c3683"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="712" y="0" width="89" height="20" uuid="b34f35d8-bce0-426f-a02c-b72b3b517eb2"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Delivery Date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="39" width="801" height="1" uuid="8375a21c-e7a4-44fc-85c0-09c17c999c05"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="89" height="20" uuid="ff6ddbdd-b8ac-409b-afd4-35f9fe1aab36"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{my_orders_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="0" width="89" height="20" uuid="65612710-be82-4888-953c-f4cd38c3de9c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{my_orders_watch_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="0" width="89" height="20" uuid="25650593-4601-4b1a-9b61-80a76b4c96d4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{my_orders_features}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="267" y="0" width="89" height="20" uuid="7edbb19e-692b-4581-aed7-c0aa4dd44363"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{my_orders_price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="0" width="89" height="20" uuid="65b07a47-bf96-428d-ac0c-2bf26233a3d0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{my_orders_color}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="0" width="89" height="20" uuid="925afc75-3249-47f8-b34c-4a40d55703ec"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{my_orders_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="534" y="0" width="89" height="20" uuid="8a20a2a4-88d8-4682-932e-57ba8222d1ad"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{my_orders_quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="623" y="0" width="89" height="20" uuid="66e9018b-cf1a-44a1-b2fb-f47e0a656021"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{my_orders_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="712" y="0" width="89" height="20" uuid="90bd9f51-6b50-4053-8af2-658cf7c36bc9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{my_orders_delivery_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

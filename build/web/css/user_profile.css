@@ -1,0 +1,83 @@
+/* 
+    Document   : user_profile
+    Created on : 13 Feb, 2023, 6:47:04 PM
+    Author     : PRACHI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+ body
+   {
+        background-image: url(images/back3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;   
+        margin-top: 20px;
+   }
+
+
+.whitediv
+{
+    height: 500px;
+    width: 600px;
+    margin: 3% 0 0 35%;
+    background-color: white;
+    border-style: solid;
+    border-color: gray;
+    border-width: 5px;
+  
+}
+.title
+{
+ height: 40px;
+ width: 250px;
+ margin-top: 2%;
+ margin-left: 30%;
+ background-color:navy;
+}
+.titlelable
+{
+    font-weight: bold;
+    color: wheat;
+    padding-top: 2.5%;
+ }
+ 
+ .innerlabel
+ {
+     margin-top: 10%;
+     font-weight: bold;
+     color: black;
+     margin-left: 20%;
+     
+ }
+.textbox
+{
+    margin-top: 5%;
+    margin-left: 2%;
+    height: 35px;
+    width: 300px;
+}
+
+.EditProfileButton
+{
+    background-color: #ff0066;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px; 
+    margin-left:20%;
+}
+ 
+.EditProfileButtonbutton:hover
+{
+    background-color: blue;
+}
+
+ .lab
+        {
+            font-size: 60px;
+        }

@@ -1,0 +1,80 @@
+/* 
+    Document   : order_tracking
+    Created on : 8 Feb, 2023, 3:41:45 PM
+    Author     : PRACHI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+ body
+    {
+        background-color: lightblue;
+    }
+    .div1
+    {
+        height: 90px;
+        width: 120px;
+        margin-top: 300px;
+        background-image: url('../images/   ');
+        
+    }
+    .div2
+    {
+        height: 90px;
+        width: 120px;
+        margin-top: 300px;
+        background-image: url('../images/track1.jpg');
+    }
+    .img
+    {
+        height: 90px;
+        width: 120px;
+        margin-top: 300px;
+        background-image: url('../images/track2.jpg');
+        background-size: cover;
+    }
+    .div4
+    {
+        height: 90px;
+        width: 120px;
+        margin-top: 300px;
+        background-image: url('../images/track3.jpg');
+    }
+    
+    .date
+    {
+        font-size: 20px;
+    }
+   .imgclass
+   {
+       height: 100px;
+       width: 100px;
+       margin-top: 150px;
+       margin-left: -1500px;
+   }
+   .imgclass1{
+       
+       height: 100px;
+       width: 100px;
+       margin-top: 150px;
+       margin-left: 290px;
+   }
+   .imgclass2
+   {
+       
+       height: 100px;
+       width: 100px;
+       margin-top: 150px;
+       margin-left: 310px;
+   }
+    
+   
+
+        
+
+
+

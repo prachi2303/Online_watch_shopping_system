@@ -1,0 +1,80 @@
+/* 
+    Document   : user_login1
+    Created on : 26 Jan, 2023, 10:49:53 AM
+    Author     : PRACHI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+
+
+            body
+            {
+               background-image: url(images/bg-2.jpg);
+               background-size: cover;
+               background-repeat: no-repeat;
+               
+            }
+            
+
+            .whitediv
+            {
+                height: 600px;
+                width: 500px;
+
+                margin-left: 80%;
+                margin-top: 2%;
+
+                height: 500px;
+                
+
+                }
+            .h
+            {
+                font-size: 15px;
+                margin-left: 200px;
+                margin-top: 0.2px;
+                color: blue;
+
+            }
+
+            .box
+            {
+                height: 450px;
+                width: 400px;
+                background-color: white;
+                margin-top: 155px;
+                margin-left: 1000px;
+                opacity: 90%;
+                border-radius:10px;
+            }
+            .textbox
+            {
+                height: 40px;
+                width: 300px;
+                border-radius: 10px;
+                margin-left: 50px;
+                margin-top: 40px;
+            }
+            .button
+            {
+                height: 40px;
+                width: 180px;
+                margin-top: 40px;
+                margin-left: 110px;
+                background-color: #C84242;
+                color: white;
+                border-radius: 10px;
+                border: none;
+            }
+            input#go:hover
+            {
+                 background-color: blue  ;
+                 color: white
+            }
+      
+  

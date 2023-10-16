@@ -1,0 +1,91 @@
+/* 
+    Document   : product_report
+    Created on : 21 Feb, 2023, 5:08:02 PM
+    Author     : PRACHI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+ body
+   {
+        background-image: url(images/back12.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;        
+   }
+
+            .whitediv
+            {
+                height: 700px;
+                width: 1100px;
+                margin-top: 10px;
+                margin-left: 400px;
+                background-color: white;
+                background-image: url(images/watch15.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius:10px;
+            }
+            .textbox
+            {
+                height: 40px;
+                width: 220px;
+                margin-top: 40px;
+                border-radius:10px;
+            }
+            .lab
+            {
+                font-size: 20px;
+                margin-top: 40px;
+                border-radius:10px;
+            }
+            .textbox1
+            {
+                height: 80px;
+                width: 80%;
+                margin-top: 80px;
+                margin-left: 50px;
+                border-radius:10px;
+            }
+            
+            .button
+            {
+                height:50px;
+                width: 40%;
+                margin-top: 65%;
+                margin-left: 80px;
+                background-color: gray;
+                border-radius:10px;
+            }
+            .button1
+            {
+                
+            
+                height:50px;
+                width: 40%;
+                margin-top: 65%;
+                margin-left: 50%;
+                background-color: orange;
+                border-radius:10px;
+ 
+            }
+ input#go:hover
+{
+  background-color: #515A5A  ;
+  color: white
+}
+input#go1:hover
+{
+  background-color: #515A5A  ;
+  color: white
+}
+.div1
+{
+ margin-left:20px;
+ margin-top:30px;
+}
+      
+   

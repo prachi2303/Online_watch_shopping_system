@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="user_payment" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="63260cc7-4ba0-44e9-b6aa-444af1954b88">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     user_payment.`id` AS user_payment_id,
+     user_payment.`user_id` AS user_payment_user_id,
+     user_payment.`name` AS user_payment_name,
+     user_payment.`phone_no` AS user_payment_phone_no,
+     user_payment.`amount` AS user_payment_amount,
+     user_payment.`payment_method` AS user_payment_payment_method,
+     user_payment.`card_no` AS user_payment_card_no
+FROM
+     `user_payment` user_payment]]>
+	</queryString>
+	<field name="user_payment_id" class="java.lang.Integer"/>
+	<field name="user_payment_name" class="java.lang.String"/>
+	<field name="user_payment_phone_no" class="java.lang.Long"/>
+	<field name="user_payment_amount" class="java.lang.Long"/>
+	<field name="user_payment_payment_method" class="java.lang.String"/>
+	<field name="user_payment_card_no" class="java.lang.Long"/>
+	<group name="user_payment_id">
+		<groupExpression><![CDATA[$F{user_payment_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="347" y="38" width="185" height="41" forecolor="#990066" uuid="205f8d33-a76b-407b-b3cf-1907296a41e1"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[User Payment]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="11" width="802" height="1" uuid="7adb893a-c473-4c44-8d33-691a8a3e6e79"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="133" height="20" uuid="b59d3711-0ed9-47bb-b09a-f115d0fff912"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="0" width="133" height="20" uuid="b209e743-e8a9-4218-bfb7-666ceb303844"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="0" width="133" height="20" uuid="87d20103-d614-4c06-a16b-dadb819be688"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Phone No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="399" y="0" width="133" height="20" uuid="a7d8d2ec-f09a-4ccf-825b-222ca5991666"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="532" y="0" width="133" height="20" uuid="e51b847f-813e-43a8-b520-cac76f0427f8"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Payment Method]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="665" y="0" width="133" height="20" uuid="0c14d349-b083-4335-b242-30bbe03356f4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Card No]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="36" width="802" height="1" uuid="2cb33dfa-927d-431c-89d1-1ba244a81580"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="133" height="20" uuid="ad110266-b180-4ff6-805b-3e998f0cec7f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_payment_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="0" width="133" height="20" uuid="02849305-a3d6-4f7b-a0ad-f1b41e7e6704"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_payment_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="266" y="0" width="133" height="20" uuid="0d50ed63-d3f8-4928-9bcd-55fd139a395e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_payment_phone_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="0" width="133" height="20" uuid="94cf57e5-230e-4781-91f5-f96d46228ef7"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_payment_amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="532" y="0" width="133" height="20" uuid="9dcb447c-d8f0-46a8-b535-35097bba06a2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_payment_payment_method}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="665" y="0" width="133" height="20" uuid="f6cca071-5bae-4e35-b606-9dd3daeb5cba"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_payment_card_no}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

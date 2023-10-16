@@ -1,0 +1,91 @@
+/* 
+    Document   : admin_signup
+    Created on : 10 Feb, 2023, 8:50:55 PM
+    Author     : PRACHI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+   
+   
+    background-image: url(images/wback2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+      
+}
+
+.whitediv
+{
+    height: 65%;
+    width: 50%;
+    margin: 5% 0 0 25%;
+    background-color: transparent black;
+    border-style: solid;
+    border-color: gray;
+    border-width: 5px;
+  
+}
+.title
+{
+ height: 40px;
+ width: 250px;
+ margin-top: 2%;
+ margin-left: 30%;
+ background-color:navy;
+}
+.titlelable
+{
+    font-weight: bold;
+    color: wheat;
+    padding-top: 2.5%;
+ }
+ 
+ .innerlabel
+ {
+     margin-top: 10%;
+     font-weight: bold;
+     color: black;
+     margin-left: 20%;
+     
+ }
+.textbox
+{
+    margin-top: 5%;
+    margin-left: 2%;
+    height: 35px;
+    width: 300px;
+}
+
+.signupbutton 
+{
+    background-color: orangered;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px; 
+    font-family: bolt;
+}
+.signupbutton 
+{
+    background-color: orangered;
+}
+.signuplink
+{
+    margin: 0 0 0 32%;
+    
+}
+.signuplink
+{
+ color: white;    
+}
+
+
+

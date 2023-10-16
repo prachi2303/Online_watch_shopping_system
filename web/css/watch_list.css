@@ -1,0 +1,53 @@
+/* 
+    Document   : watch_list
+    Created on : 1 Apr, 2023, 11:30:45 AM
+    Author     : PRACHI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+    background-image: url(images/shape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.whitediv
+{    
+    height: 650px;
+    width: 1000px;
+    margin-top:0% ;
+    margin-left:30%;
+    background-color: white; 
+    border-radius:10px;
+}
+
+
+
+#search-bar{
+  float: left;
+}
+
+.viewbox {
+  float: right; 
+  }
+.clearfix
+{
+    clear: both;
+}
+.view {
+  display:inline-block;
+}
+
+
+.lst {
+  border-top: 1px solid black;
+    border-bottom: 1px solid #d1d1e0;
+  padding: 15px;
+}
+

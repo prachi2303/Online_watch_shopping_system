@@ -1,0 +1,25 @@
+/* 
+    Document   : history_table
+    Created on : 13 Feb, 2023, 3:29:15 PM
+    Author     : PRACHI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+   {
+       background-color: lightblue;
+   }
+            table
+            {
+                height: 80%;
+                width: 70%;
+                margin-top: 40px;
+                margin-left: 50px;
+            }
+           
+            

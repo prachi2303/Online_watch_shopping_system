@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="user_address" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="73c43a60-4caf-486b-b912-d39d6f8c9119">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     address.`id` AS address_id,
+     address.`name` AS address_name,
+     address.`contact` AS address_contact,
+     address.`line_no_1` AS address_line_no_1,
+     address.`pincode` AS address_pincode,
+     address.`city` AS address_city,
+     address.`state` AS address_state
+FROM
+     `address` address]]>
+	</queryString>
+	<field name="address_id" class="java.lang.Integer"/>
+	<field name="address_name" class="java.lang.String"/>
+	<field name="address_contact" class="java.lang.Long"/>
+	<field name="address_line_no_1" class="java.lang.String"/>
+	<field name="address_pincode" class="java.lang.Long"/>
+	<field name="address_city" class="java.lang.String"/>
+	<field name="address_state" class="java.lang.String"/>
+	<group name="address_id">
+		<groupExpression><![CDATA[$F{address_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="320" y="25" width="181" height="54" forecolor="#990066" uuid="175bb825-5cc2-4136-8cf6-aaca148534a7"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[User Address]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="32" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="18" width="802" height="1" uuid="c80067ac-054d-4ce7-8c60-422effd3eddf"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="114" height="20" uuid="13238099-ebb8-4939-9fb8-97fd869a2e09"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="0" width="114" height="20" uuid="080049f8-9ea9-41c8-bb79-41b5b52f0f5d"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="0" width="114" height="20" uuid="e600edb7-e09a-4941-aa0c-89418cc4bd97"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Contact]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="0" width="114" height="20" uuid="f0dc4358-f7b8-44d6-acb7-27302331b326"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Line No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="0" width="114" height="20" uuid="dbeb6371-e909-465c-a6f2-735c0360e355"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Pincode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="570" y="0" width="114" height="20" uuid="e7b01f04-0433-41ce-8e9f-eb6c829641c9"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="684" y="0" width="114" height="20" uuid="160eb10c-de8d-40ca-bc6b-8a110a8dfb50"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[State]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="36" width="802" height="1" uuid="356b5d71-494d-4957-bd31-91cc5e014832"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="114" height="20" uuid="22b5366c-c7d4-4aea-8d94-cdc87c6718dd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{address_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="0" width="114" height="20" uuid="37d57807-8364-4511-a63b-7e8cfca2cab2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{address_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="228" y="0" width="114" height="20" uuid="d30bff29-6f7a-4d2c-855a-6210f31bec31"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{address_contact}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="0" width="114" height="20" uuid="e296d900-3247-445b-85dc-c3428a2f3654"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{address_line_no_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="456" y="0" width="114" height="20" uuid="92de5ab7-7723-4837-9271-e68847d1f60d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{address_pincode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="570" y="0" width="114" height="20" uuid="83a15466-ca27-4eac-a58f-341750902c4d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{address_city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="684" y="0" width="114" height="20" uuid="a9828859-0e60-4a3f-a520-8653fb977a0f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{address_state}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

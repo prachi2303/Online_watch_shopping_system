@@ -1,0 +1,53 @@
+/* 
+    Document   : home_page2
+    Created on : 6 Apr, 2023, 2:44:26 PM
+    Author     : PRACHI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+   {
+        background-image: url(images/123.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;        
+   }
+
+.c{
+    background-color: #99CCFF;
+}
+.whitediv{
+    
+    height: 300px;
+    width: 75%;
+    background-color: #7395ae;
+    font-size:120%;
+    border-radius:10px;
+    
+}
+
+.image{ 
+    height: 300px;
+    width: 300px;
+    background-color: grey; 
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.button
+{
+    height: 30px;
+    width: 25%;
+    margin-left:70%;
+    border-radius:4px;
+    background-color: #9a1750 ; 
+    color:white;
+}
+
+
+
+
+
+

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="booking_page" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b9d84dd2-3c85-4861-95f1-aee6dc086f92">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     booking_page.`id` AS booking_page_id,
+     booking_page.`watch_name` AS booking_page_watch_name,
+     booking_page.`color` AS booking_page_color,
+     booking_page.`price` AS booking_page_price,
+     booking_page.`features` AS booking_page_features
+FROM
+     `booking_page` booking_page]]>
+	</queryString>
+	<field name="booking_page_id" class="java.lang.Integer"/>
+	<field name="booking_page_watch_name" class="java.lang.String"/>
+	<field name="booking_page_color" class="java.lang.String"/>
+	<field name="booking_page_price" class="java.lang.String"/>
+	<field name="booking_page_features" class="java.lang.String"/>
+	<group name="booking_page_id">
+		<groupExpression><![CDATA[$F{booking_page_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="331" y="40" width="184" height="39" forecolor="#990099" uuid="34b11afe-1216-447d-847d-b9385772ac25"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Booking Page]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="17" width="802" height="1" uuid="3a364abc-9dca-4a3d-b2d0-30e3a853ec9c"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="160" height="20" uuid="307a6bd6-3ed5-4f96-b538-ba4444055858"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="0" width="160" height="20" uuid="09536c67-2467-4203-b6d5-d67292d5de5b"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Watch Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="0" width="160" height="20" uuid="cefdde7e-daf7-465a-9b23-be21100085f1"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Color]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="0" width="160" height="20" uuid="bd6c6c4d-f7e6-464c-8d24-c357c387a1dd"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="640" y="0" width="160" height="20" uuid="5f1d8db1-9e71-487b-b430-1fbefd405c0b"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Features]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="38" width="802" height="1" uuid="0d887f73-20af-4989-8e8f-c31ad99c7ea8"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="160" height="20" uuid="0c18e98f-19b7-42c2-b232-15cb5ac534c2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{booking_page_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="160" height="20" uuid="e747c2ba-f5c7-4a81-abe1-0040658b891b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{booking_page_watch_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="160" height="20" uuid="163c5a95-24f9-4302-b896-4acd79cd9655"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{booking_page_color}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="160" height="20" uuid="9a1a26b7-5307-4a00-ab2c-a7ec21a128b0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{booking_page_price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="0" width="160" height="20" uuid="aa6513d4-f5b2-4b6a-84ec-f753b5403ecd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{booking_page_features}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

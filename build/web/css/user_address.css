@@ -1,0 +1,72 @@
+/* 
+    Document   : user_address
+    Created on : 21 Feb, 2023, 5:05:40 PM
+    Author     : PRACHI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+ body
+   {
+        background-image: url(images/back3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;        
+   }
+
+.whitediv
+{
+    height: 700px;
+    width: 800px;
+    background-color: white;
+    margin-left: 35%;
+    margin-top: 1%;
+    border-radius:10px; 
+}
+.textbox
+{
+    height: 35px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: none;
+    background-color: whitesmoke;
+        
+}
+.button{
+    height: 45px;
+    width: 220px;
+    margin-top: 13%;
+    margin-left: 20%;
+    background-color: #E74C3C;
+    border-radius:10px; 
+    
+}
+.button1{
+    height: 45px;
+    width: 220px;
+    margin-top: 13%;
+    margin-left: 20%;
+    background-color: gray;
+    border-radius:10px; 
+    
+}
+hr {
+  border-top: 1px solid grey;
+}
+
+input#go:hover
+{
+  background-color: #515A5A  ;
+  color: white
+}
+input#go1:hover
+{
+  background-color: #515A5A  ;
+  color: white
+}
+
+  

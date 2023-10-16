@@ -1,0 +1,63 @@
+/* 
+    Document   : admin_login
+    Created on : 25 Jan, 2023, 10:39:47 AM
+    Author     : PRACHI
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+  
+        
+body
+{
+    background-image: url(images/wback3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.whitediv
+{
+    height: 550px;
+    width: 550px;
+    background-color:transparent;
+    margin-left: 55%;
+    margin-top: 5%;
+    border-radius:10px;
+    
+   
+}
+.textbox
+{
+    height: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: none;
+    background-color: whitesmoke;
+}
+
+
+.button
+{
+    height: 50px;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 15%;
+    border-radius:10px;
+    background-color: orangered; 
+    color:white;
+}
+hr {
+  border-top: 1px solid grey;
+}
+
+input#go:hover
+{
+  background-color: #515A5A  ;
+  color: white
+}
+
